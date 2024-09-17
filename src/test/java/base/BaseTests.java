@@ -29,10 +29,10 @@ public class BaseTests {
         driver.quit();
     }
     @BeforeMethod
-    public void getUrl() throws InterruptedException {
+    public void getUrl() {
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
-        Thread.sleep(10000);
+
     }
 
 }
