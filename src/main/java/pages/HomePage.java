@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class HomePage {
     private WebDriver driver;
     public HomePage(WebDriver driver){
@@ -43,6 +45,7 @@ public class HomePage {
     }
     public FileUploadPage clickFileUpload(){
         clickLink("File Upload");
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         return new FileUploadPage(driver);
     }
 

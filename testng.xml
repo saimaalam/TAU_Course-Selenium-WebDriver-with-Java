@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/selenium/webdriver_java">
+        <classes>
+            <class name="alerts.AlertTests">
+                <methods>
+                    <include name="testAcceptAlert"/>
+                    <include name="testGetTextFromAlert"/>
+                    <include name="testInputInAlert"/>
+                </methods>
+            </class>
+            <class name="dropdown.DropdownTests">
+                <methods>
+                    <include name="testSelectOptions"/>
+                </methods>
+            </class>
+            <class name="forgotpassword.ForgotPasswordTests">
+                <methods>
+                    <include name="testForgotPassword"/>
+                </methods>
+            </class>
+            <class name="horizontalslider.HorizontalSliderTests">
+                <methods>
+                    <include name="testSlider"/>
+                </methods>
+            </class>
+            <class name="hover.HoverTests">
+                <methods>
+                    <include name="testHoverUser1"/>
+                    <include name="testHoverUser2"/>
+                </methods>
+            </class>
+            <class name="keys.KeysTests">
+                <methods>
+                    <include name="testBackspace"/>
+                    <include name="testPi"/>
+                </methods>
+            </class>
+            <class name="login.LoginTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testWrongUsername"/>
+                    <include name="testWrongPassword"/>
+                    <include name="testBlankUsername"/>
+                </methods>
+            </class>
+            <class name="wait.WaitTests">
+                <methods>
+                    <include name="testWaitUntillHidden"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
