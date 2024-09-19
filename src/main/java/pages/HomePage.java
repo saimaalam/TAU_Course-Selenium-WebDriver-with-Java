@@ -49,9 +49,14 @@ public class HomePage {
         return new FileUploadPage(driver);
     }
 
-    public DynamicLoadingPage clickADynamicLoading(){
+    public DynamicLoadingPage clickDynamicLoading(){
         clickLink("Dynamic Loading");
         return new DynamicLoadingPage(driver);
+    }
+    public ContextMenuPage clickContextMenu(){
+        clickLink("Context Menu");
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        return new ContextMenuPage(driver);
     }
 
 
