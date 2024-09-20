@@ -58,6 +58,11 @@ public class HomePage {
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         return new ContextMenuPage(driver);
     }
+    public WysiwygEditorPage clickWysiwygEditor(){
+        clickLink("WYSIWYG Editor");
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        return new WysiwygEditorPage(driver);
+    }
 
 
 }

@@ -10,6 +10,16 @@
                     <include name="testInputInAlert"/>
                 </methods>
             </class>
+            <class name="alerts.ContextClickTests">
+                <methods>
+                    <include name="testRightClick"/>
+                </methods>
+            </class>
+            <class name="alerts.FileUploadTests">
+                <methods>
+                    <include name="testFileUpload"/>
+                </methods>
+            </class>
             <class name="dropdown.DropdownTests">
                 <methods>
                     <include name="testSelectOptions"/>

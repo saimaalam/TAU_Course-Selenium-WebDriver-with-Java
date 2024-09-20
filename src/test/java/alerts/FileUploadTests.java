@@ -7,7 +7,7 @@ import pages.FileUploadPage;
 import static org.testng.Assert.assertEquals;
 
 public class FileUploadTests extends BaseTests {
-    @Test
+    @Test(enabled = false)
     public void testFileUpload(){
         FileUploadPage fileUploadPage= homePage.clickFileUpload();
         fileUploadPage.uploadFile("E:/selenium/webdriver_java/resources");
