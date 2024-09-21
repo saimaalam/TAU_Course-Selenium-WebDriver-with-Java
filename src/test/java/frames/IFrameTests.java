@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class FrameTest extends BaseTests {
+public class IFrameTests extends BaseTests {
     @Test
     public void testWysiwyg(){
         var editorPage = homePage.clickWysiwygEditor();

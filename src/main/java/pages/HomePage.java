@@ -64,5 +64,14 @@ public class HomePage {
         return new WysiwygEditorPage(driver);
     }
 
+    public FramesPage clickFramesPage(){
+        clickLink("Frames");
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        return new FramesPage(driver);
+    }
+    public LargeAndDeepDomPage clickLargeAndDeepDom(){
+        clickLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
 
 }
