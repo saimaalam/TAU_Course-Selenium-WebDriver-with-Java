@@ -1,15 +1,12 @@
 package base;
-import jdk.jfr.Enabled;
-import net.bytebuddy.dynamic.TypeResolutionStrategy;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 import pages.HomePage;
+import utils.WindowManager;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTests {
@@ -32,7 +29,9 @@ public class BaseTests {
     public void getUrl() {
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
-
+    }
+    public WindowManager getWindowManager(){
+        return new WindowManager(driver);
     }
 
 }
