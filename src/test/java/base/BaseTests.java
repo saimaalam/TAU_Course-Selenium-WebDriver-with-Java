@@ -1,11 +1,11 @@
 package base;
 
 import com.google.common.io.Files;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -20,7 +20,6 @@ import utils.WindowManager;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
-//import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTests {
     protected HomePage homePage;
@@ -32,6 +31,7 @@ public class BaseTests {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         //System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
         driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions()));
+        //driver = new EventFiringWebDriver(new FirefoxDriver());
         driver.register(new EventReporter());
         //driver = new FirefoxDriver();
         //driver.get("https://the-internet.herokuapp.com/");

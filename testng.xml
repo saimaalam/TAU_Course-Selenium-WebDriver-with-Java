@@ -20,6 +20,11 @@
                     <include name="testFileUpload"/>
                 </methods>
             </class>
+            <class name="cookies.CookiesTests">
+                <methods>
+                    <include name="testDeleteCookie"/>
+                </methods>
+            </class>
             <class name="dropdown.DropdownTests">
                 <methods>
                     <include name="testSelectOptions"/>
@@ -28,6 +33,16 @@
             <class name="forgotpassword.ForgotPasswordTests">
                 <methods>
                     <include name="testForgotPassword"/>
+                </methods>
+            </class>
+            <class name="frames.IFrameTests">
+                <methods>
+                    <include name="testWysiwyg"/>
+                </methods>
+            </class>
+            <class name="frames.NestedFrameTests">
+                <methods>
+                    <include name="testFrameText"/>
                 </methods>
             </class>
             <class name="horizontalslider.HorizontalSliderTests">
@@ -39,6 +54,12 @@
                 <methods>
                     <include name="testHoverUser1"/>
                     <include name="testHoverUser2"/>
+                </methods>
+            </class>
+            <class name="javascript.JavaScriptTests">
+                <methods>
+                    <include name="testScrollToTable"/>
+                    <include name="testScrollToFifthParagraph"/>
                 </methods>
             </class>
             <class name="keys.KeysTests">
@@ -53,6 +74,12 @@
                     <include name="testWrongUsername"/>
                     <include name="testWrongPassword"/>
                     <include name="testBlankUsername"/>
+                </methods>
+            </class>
+            <class name="navigation.NavigationTests">
+                <methods>
+                    <include name="testNavigator"/>
+                    <include name="testSwitchTab"/>
                 </methods>
             </class>
             <class name="wait.WaitTests">
